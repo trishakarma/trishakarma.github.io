@@ -1,37 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trisha Karmakar</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            line-height: 1.6;
-            color: #fff;
-            background: #111628df;
-            min-height: 100vh;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #f4f4f4;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 2rem;
+      align-items: center;
+    }
+    .about img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-right: 2rem;
+    }
+    .about-text {
+      flex: 1;
+    }
+    .links {
+      margin-top: 1rem;
+    }
+    .links a {
+      margin-right: 1rem;
+      text-decoration: none;
+      color: #0077cc;
+      font-size: 1rem;
+    }
+    .projects {
+      padding: 2rem;
+    }
+    .project {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+      align-items: center;
+    }
+    .project:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .project img {
+      width: 300px;
+      height: auto;
+      margin: 1rem;
+    }
+    .project-description {
+      flex: 1;
+      margin: 1rem;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Header -->
-        <div class="header">
-            <h1 class="name">Trisha Karmakat</h1>
-            <div class="links">
-                <a href="www.linkedin.com/in/trisha-karmakar" class="link">LinkedIn</a>
-                <span class="link-separator">|</span>
-                <a href="#" class="link">Resume</a>  <!--PLACEHOLDER LINK-->
-                <span class="link-separator">|</span>
-                <a href="https://github.com/trishakarma" class="link">GitHub</a>
-            </div>
-        </div>
+  <header>
+    <h1>Your Name</h1>
+    <p>Curious · Creative · Analytical · Driven</p>
+  </header>
+
+  <section class="about">
+    <img src="photo.jpg" alt="Your Photo">
+    <div class="about-text">
+      <p>
+        Hello! I’m ......
+      </p>
+      <div class="links">
+        <a href="#">GitHub</a>
+        <a href="#">Resume</a>
+        <a href="#">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects">
+    <div class="project">
+      <img src="project1.jpg" alt="Project 1">
+      <div class="project-description">
+        <h3>p1</h3>
+        <p>description</p>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="project2.jpg" alt="Project 2">
+      <div class="project-description">
+        <h3>p2</h3>
+        <p>description.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
