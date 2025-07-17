@@ -188,6 +188,42 @@
       justify-content: center;
     }
 
+    .timeline-container {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 10px 0;
+  scrollbar-width: none; /* Firefox */
+}
+
+.timeline-container::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+.timeline-item {
+  flex: 0 0 auto;
+  text-align: center;
+  position: relative;
+  padding: 10px 20px;
+  border-left: 2px solid #000;
+}
+
+.timeline-item:first-child {
+  border-left: none;
+}
+
+.timeline-year {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.timeline-detail {
+  font-size: 14px;
+  color: #333;
+  max-width: 160px;
+}
+
     .phosphor-section {
       background: #f4f4f4;
       color: #000;
@@ -354,7 +390,6 @@
 
     <!-- Honours -->
     <section>
-      <div class="section-header">Honours</div>
       <div class="section-header">Honours</div>
         <div class="timeline-container">
         <div class="timeline-item">
