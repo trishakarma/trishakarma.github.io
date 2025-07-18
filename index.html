@@ -50,6 +50,13 @@
       margin-bottom: 20px;
     }
 
+    .header-name {
+      font-family: Georgia, serif;
+      font-size: 28px;
+      font-weight: normal;
+      color: #000;
+    }
+
     .reading-indicator {
       font-family: monospace;
       font-size: 14px;
@@ -118,14 +125,6 @@
       text-align: justify;
     }
 
-    .profile-text h1 {
-      font-size: 28px;
-      font-weight: normal;
-      margin-bottom: 15px;
-      font-family: Georgia, serif;
-      display: none;
-    }
-
     .profile-text p {
       font-size: 18px;
       line-height: 1.8;
@@ -139,15 +138,18 @@
 
     .section-divider {
       border: none;
-      border-top: 1px solid #000;
+      border-top: 2px solid #000;
       margin: 60px 0 30px;
+      position: relative;
     }
 
     .section-divider::after {
       content: "";
-      display: block;
+      position: absolute;
+      top: 3px;
+      left: 0;
+      right: 0;
       border-top: 1px solid #000;
-      margin-top: 4px;
     }
 
     .section-header {
@@ -374,13 +376,14 @@
           <a href="mailto:tk3110@columbia.edu">Email</a>
         </div>
       </div>
+      <div class="header-name">Trisha Karmakar</div>
       <div class="profile-section">
         <img src="/imgs/pfp website 1.jpg" class="profile-image"></div>
         <div class="profile-text">
           <h1>Trisha Karmakar</h1>
           <p>Hi! I’m Trisha. I’m a C.P. Davis Scholar at Columbia University studying Computer Science (B.S.) and Economics (Minor). I love building. Whether it’s machine learning models, frontend, games or robots: I value the experiences I’ve gained working across domains.<br>
-            <br> My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in the peer-reviewed journal IJERSTE and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
-            <br> When I’m not on my laptop, I’m likely exploring NYC or reading—looking for inspiration for my next project.<br>
+            <br> My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in a peer-reviewed journal and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
+            <br> When I’m not on my laptop, I’m likely exploring New York or reading—looking for inspiration for my next project.<br>
             </p>
         </div>
     </header>
