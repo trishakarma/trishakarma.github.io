@@ -46,25 +46,6 @@
       justify-content: space-between;
       align-items: center;
       margin-bottom: 20px;
-      position: relative;
-    }
-
-    .nav-bar::after {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 50%;
-      width: 1px;
-      background-color: black;
-      transform: translateX(-50%);
-    }
-
-    .nav-divider {
-      width: 1px;
-      background: #000;
-      height: 100%;
-      margin: 0 20px;
     }
 
     .reading-indicator {
@@ -111,18 +92,13 @@
     }
 
     .profile-section {
-      display: flex;
-      gap: 30px;
       margin-bottom: 40px;
-      align-items: flex-start;
-      filter: grayscale(100%);
-      transition: filter 0.3s ease;
+      position: relative;
     }
 
     .profile-section:hover .profile-image {
       filter: none;
       -webkit-filter: grayscale(0);
-      filter: grayscale(0%);
     }
 
     .profile-image {
@@ -131,12 +107,13 @@
       border-radius: 50%;
       background: #000;
       flex-shrink: 0;
-      filter: grayscale(100%);
-      transition: filter 0.3s ease;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 20px;
     }
 
     .profile-text {
-      flex: 1;
+      text-align: justify;
     }
 
     .profile-text h1 {
@@ -192,13 +169,15 @@
       border: 1px solid #ccc;
       padding: 20px;
       transition: transform 0.2s ease;
-      filter: grayscale(100%);
-      transition: filter 0.3s ease;
     }
 
     .card:hover {
       transform: translateY(-3px);
-      filter: grayscale(0%);
+    }
+
+    .card:hover img {
+      filter: none;
+      -webkit-filter: grayscale(0);
     }
 
     .card-image {
@@ -361,7 +340,7 @@
       }
 
       .profile-text {
-        text-align: center;
+        text-align: left;
       }
 
       .nav-bar {
@@ -373,12 +352,6 @@
       .grid {
         grid-template-columns: 1fr;
       }
-
-      .full-name {
-      font-size: 22px;
-      font-family: Georgia, serif;
-      font-weight: bold;
-    }
     }
   </style>
 </head>
@@ -387,14 +360,11 @@
     <!-- Header -->
     <header class="header">
       <div class="nav-bar">
-        <div class="nav-bar">
-          <div class="full-name">Trisha Karmakar</div>
-          <div class="social-links">
-            <a href="https://www.linkedin.com/in/trisha-karmakar">LinkedIn</a>
-            <a href="#">Resume</a>
-            <a href="https://github.com/trishakarma">GitHub</a>
-            <a href="mailto:tk3110@columbia.edu">Email</a>
-          </div>
+        <div class="social-links">
+          <a href="www.linkedin.com/in/trisha-karmakar">LinkedIn</a>
+          <a href="#">Resume</a> <!-- ADD LINK -->
+          <a href="https://github.com/trishakarma">GitHub</a>
+          <a href="mailto:tk3110@columbia.edu">Email</a>
         </div>
       </div>
       <div class="profile-section">
@@ -402,7 +372,7 @@
         <div class="profile-text">
           <h1>Trisha Karmakar</h1>
           <p>Hi! I’m Trisha. I’m a C.P. Davis Scholar at Columbia University studying Computer Science (B.S.) and Economics (Minor). I love building. Whether it’s machine learning models, frontend, games or robots: I value the experiences I’ve gained working across domains.<br>
-            <br> My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in a peer-reviewed journal and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
+            <br> My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in the peer-reviewed journal IJERSTE and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
             <br> When I’m not on my laptop, I’m likely exploring NYC or reading—looking for inspiration for my next project.<br>
             </p>
         </div>
@@ -427,7 +397,7 @@
           <div class="card-image"></div>
           <div class="card-content">
             <h3>Computer Vision for Sculpting Music</h3>
-            <p>Inspired by producer Imogen Heap’s gesture-controlled music gloves, I built an audio processor that responds to hand movements. Using MediaPipe for computer vision and the PSOLA, Librosa, and PyAudio libraries for audio processing, I engineered a way to autotune input audio through simple hand gestures—no buttons needed. </p>
+            <p>Inspired by producer Imogen Heap’s gesture-controlled music gloves, I built an audio processor that responds to hand movements. Using MediaPipe for computer vision and libraries like PSOLA, Librosa, and PyAudio, I engineered a way to control autotune effects on input audio through simple hand gestures—no buttons needed. </p>
             <div class="card-footer">View Project</div>
           </div>
         </div>
