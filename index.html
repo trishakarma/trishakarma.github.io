@@ -54,6 +54,32 @@
       color: #000;
     }
 
+    .name-with-line {
+      position: relative;
+      display: inline-block;
+      font-size: 28px;
+      font-weight: normal;
+      font-family: Georgia, serif;
+    }
+
+    .name-with-line::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #000;
+      z-index: 1;
+    }
+
+    .name-with-line span {
+      background: #fff;
+      padding: 0 10px;
+      position: relative;
+      z-index: 2;
+    }
+
     .social-links {
       display: flex;
       gap: 15px;
@@ -66,22 +92,28 @@
     }
 
     .profile-section {
-      display: flex;
-      align-items: center;
-      gap: 40px;
       margin-bottom: 40px;
+      position: relative;
+    }
+
+    .profile-section:hover .profile-image {
+      filter: none;
+      -webkit-filter: grayscale(0);
     }
 
     .profile-image {
-      width: 160px;
-      height: 160px;
+      width: 200px;
+      height: 200px;
       border-radius: 50%;
       background: #000;
       flex-shrink: 0;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 20px;
     }
 
     .profile-text {
-      flex: 1;
+      text-align: justify;
     }
 
     .profile-text h1 {
@@ -89,6 +121,7 @@
       font-weight: normal;
       margin-bottom: 15px;
       font-family: Georgia, serif;
+      display: none;
     }
 
     .profile-text p {
@@ -140,6 +173,11 @@
 
     .card:hover {
       transform: translateY(-3px);
+    }
+
+    .card:hover img {
+      filter: none;
+      -webkit-filter: grayscale(0);
     }
 
     .card-image {
@@ -295,6 +333,22 @@
         text-align: center;
       }
 
+      .profile-image {
+        float: none;
+        margin: 0 auto 20px;
+        display: block;
+      }
+
+      .profile-text {
+        text-align: left;
+      }
+
+      .nav-bar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+      }
+
       .grid {
         grid-template-columns: 1fr;
       }
@@ -318,8 +372,8 @@
         <div class="profile-text">
           <h1>Trisha Karmakar</h1>
           <p>Hi! I’m Trisha. I’m a C.P. Davis Scholar at Columbia University studying Computer Science (B.S.) and Economics (Minor). I love building. Whether it’s machine learning models, frontend, games or robots: I value the experiences I’ve gained working across domains.<br>
-            My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in the peer-reviewed journal IJERSTE and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
-            When I’m not on my laptop, I’m likely exploring NYC or reading—looking for inspiration for my next project.<br>
+            <br> My favorite project thus far has been my machine learning research to detect microplastics. From constructing a dataset and model to engineering a scalable, affordable device—my work was published in the peer-reviewed journal IJERSTE and won the CREST Gold Award. I bring this focus on rapid problem-solving and user experience to everything I build.<br> 
+            <br> When I’m not on my laptop, I’m likely exploring NYC or reading—looking for inspiration for my next project.<br>
             </p>
         </div>
       </div>
@@ -330,9 +384,11 @@
       <div class="section-header">Projects</div>
       <div class="grid">
         <div class="card">
-          <div class="card-image"></div>
+          <div class="card-image">
+            <img src="">
+          </div>
           <div class="card-content">
-            <h3>ML Microplastics</h3>
+            <h3>Novel Machine Learning Based Approach to Microplastic Detection</h3>
             <p>[Placeholder text].</p>
             <div class="card-footer">View Project</div>
           </div>
@@ -340,8 +396,8 @@
         <div class="card">
           <div class="card-image"></div>
           <div class="card-content">
-            <h3>[XXX]</h3>
-            <p>[XXX]</p>
+            <h3>Computer Vision for Sculpting Music</h3>
+            <p>Inspired by producer Imogen Heap’s gesture-controlled music gloves, I built an audio processor that responds to hand movements. Using MediaPipe for computer vision and libraries like PSOLA, Librosa, and PyAudio, I engineered a way to control autotune effects on input audio through simple hand gestures—no buttons needed. </p>
             <div class="card-footer">View Project</div>
           </div>
         </div>
