@@ -43,19 +43,19 @@
     }
 
     .nav-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
+      position: relative;
+      height: 20px;
       margin-bottom: 20px;
     }
 
     .header-name {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       font-family: Georgia, serif;
       font-size: 20px;
       font-weight: normal;
-      text-align: center;
-      flex: 1;
-      align-self: flex-end;
+      bottom: 0
     }
 
     .reading-indicator {
@@ -65,6 +65,9 @@
     }
 
     .social-links {
+      position: absolute;
+      right: 0;
+      bottom: 0;
       display: flex;
       gap: 15px;
     }
