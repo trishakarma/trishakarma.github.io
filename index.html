@@ -98,6 +98,11 @@
       position: relative;
     }
 
+    .profile-text:hover ~ .profile-image {
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
     .profile-section:hover .profile-image {
       filter: none;
       -webkit-filter: grayscale(0);
@@ -177,10 +182,18 @@
       transform: translateY(-3px);
     }
 
-    .card:hover img {
+    .card-content:hover ~ .card-image img,
+    .card-content:hover ~ .card-image {
       filter: none;
       -webkit-filter: grayscale(0);
     }
+
+    .card:hover img,
+    .card:hover .card-image {
+      filter: none;
+      -webkit-filter: grayscale(0);
+    }
+
 
     .card-image {
       width: 100%;
@@ -192,6 +205,9 @@
       font-size: 32px;
       color: #666;
       margin-bottom: 20px;
+      filter: grayscale(100%);
+      -webkit-filter: grayscale(100%);
+      transition: filter 0.3s ease;
     }
 
     .card h3 {
