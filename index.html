@@ -138,7 +138,7 @@
     .section-divider {
       border: none;
       border-top: 1px solid #000;
-      margin: 0px 0 30px;
+      margin: 0px 0 20px;
     }
 
     .section-header {
@@ -221,6 +221,43 @@
       display: flex;
       align-items: center;
       justify-content: center;
+    }
+
+    .work-experience-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      margin-bottom: 60px;
+    }
+
+    .work-card {
+      background: #fff;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      transition: transform 0.2s ease;
+      width: 100%;
+    }
+
+    .work-card:hover {
+      transform: translateY(-3px);
+    }
+
+    .work-card-content {
+      width: 100%;
+    }
+
+    .work-card h3 {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .work-card p {
+      font-size: 14px;
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 15px;
     }
 
     .timeline-container {
@@ -387,6 +424,7 @@
     <!-- Projects -->
     <section>
       <div class="section-header">Projects</div>
+      <br>
       <div class="grid">
         <div class="card">
           <div class="card-image">
@@ -395,7 +433,7 @@
           <div class="card-content">
             <h3>ML for Microplastic Detection</h3>
             <p>Driven by escalating water pollution in my city, I engineered a portable ML-based device for real-time microplastic detection. I collected and annotated water sample images, used data augmentation to scale the dataset to 5000+ images, and trained a Tensorflow model to 97% accuracy. My research was published in peer-reviewed journal IJERSTE & my Raspberry-Pi integrated device won the prestigious CREST Gold Award for innovation.</p>
-            <div class="card-footer"><a href="https://www.erpublications.com/uploaded_files/download/trisha-karmakar-reetu-jain_zAFaL.pdf"></a>View Project</div>
+            <div class="card-footer"><a href="https://www.erpublications.com/uploaded_files/download/trisha-karmakar-reetu-jain_zAFaL.pdf">View Project</a></div>
           </div>
         </div>
         <div class="card">
@@ -417,6 +455,38 @@
             <div class="card-footer"><a href="https://github.com/trishakarma/jungle-run">View Project</a></div>  
           </div>
         </div>
+
+        <div class="card">
+          <div class="card-image">
+            <img src="#" alt="UNO OUT" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
+          <div class="card-content">
+            <h3>UNO-Out Arcade Game</h3>
+            <p>[PLACEHOLDER]</p>
+            <div class="card-footer"><a href="#">View Project</a></div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="#" alt="Sentiment Analysis" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
+          <div class="card-content">
+            <h3>Mt. Vesuvius Activity</h3>
+            <p>[PLACEHOLDER SHINY DASHBOARD]</p>
+            <div class="card-footer"><a href="#">View Project</a></div>  
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-image">
+            <img src="#" alt="Seismic Activity Shiny Dashboard" style="width:100%; height:100%; object-fit:cover;" />
+          </div>
+          <div class="card-content">
+            <h3>Sentiment Analysis Full-Stack</h3>
+            <p>[PLACEHOLDER App]</p>
+            <div class="card-footer"><a href="#">View Project</a></div>  
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -425,26 +495,23 @@
     <!-- Work Experience -->
     <section>
       <div class="section-header">Work Experience</div>
-      <div class="grid">
-        <div class="card">
-          <div class="card-image"></div>
-          <div class="card-content">
+      <div class="work-experience-grid">
+        <div class="work-card">
+          <div class="work-card-content">
             <h3>[XXX]</h3>
             <p> [XXX] </p>
             <div class="card-footer">View Details</div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image"></div>
-          <div class="card-content">
+        <div class="work-card">
+          <div class="work-card-content">
             <h3>[XXX]</h3>
             <p>[XXX]</p>
             <div class="card-footer">View Details</div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-image"></div>
-          <div class="card-content">
+        <div class="work-card">
+          <div class="work-card-content">
             <h3>[XXX]</h3>
             <p>[XXX]</p>
             <div class="card-footer">View Details</div>
@@ -452,7 +519,7 @@
         </div>
       </div>
     </section>
-
+    
     <hr class="section-divider">
 
     <!-- Honours -->
