@@ -43,19 +43,19 @@
     }
 
     .nav-bar {
-      position: relative;
-      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
       margin-bottom: 20px;
+      flex-direction: column;
     }
 
     .header-name {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
       font-family: Georgia, serif;
       font-size: 20px;
       font-weight: normal;
-      bottom: 0
     }
 
     .reading-indicator {
@@ -400,9 +400,9 @@
             <img src="/imgs/microplastics.png" alt="Microplastic Detection" style="width:100%; height:100%; object-fit:cover;" />
           </div>
           <div class="card-content">
-            <h3>Machine Learning for Microplastic Detection</h3>
-            <p>[Placeholder text].</p>
-            <div class="card-footer">View Project</div>
+            <h3>Machine Learning Approach to Microplastic Detection</h3>
+            <p>Driven by escalating water pollution in my city, I engineered a portable ML-based device for real-time microplastic detection. I collected and annotated water sample images, used data augmentation to scale the dataset to 5000+ images, and trained a Tensorflow model to 97% accuracy. My research was published in peer-reviewed journal IJERSTE & my Raspberry-Pi integrated device won the prestigious CREST Gold Award for innovation.</p>
+            <div class="card-footer"><a href=https://www.erpublications.com/uploaded_files/download/trisha-karmakar-reetu-jain_zAFaL.pdf></a>View Project</div>
           </div>
         </div>
         <div class="card">
@@ -417,7 +417,7 @@
         <div class="card">
           <div class="card-image"></div>
           <div class="card-content">
-            <h3>[XXX]</h3>
+            <h3>Jungle Run</h3>
             <p>[XXX]</p>
             <div class="card-footer">View Project</div>
           </div>
