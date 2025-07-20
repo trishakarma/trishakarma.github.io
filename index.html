@@ -331,26 +331,25 @@
     }
 
     .icon {
-      width: 50px;
-      height: 50px;
-      background: #f0f0f0;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #000;
-      font-size: 14px;
-      font-weight: bold;
-      transition: all 0.3s ease;
-      box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+      width: 60px;
+      height: 60px;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
       cursor: pointer;
     }
 
     .icon:hover {
-      background: #007aff;
-      color: #fff;
-      transform: scale(1.3);
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+      transform: scale(1.2);
+      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
     }
 
 
@@ -594,20 +593,20 @@
     <div class="technical-skills">
     <p>
       <li>Languages: Java, Python, R, C, C++, C#, HTML/CSS, SQL </li>
-      <li>Tools: React, Tensorflow, Git, Canva, Arduino, SolidWorks</li>
+      <li>Tools: React, NodeJS, ML Libraries (Tensorflow, MediaPipe), Git, Canva, Arduino, SolidWorks</li>
       <br>
     <p>
 
     </div>
         <div class="phosphor-icons">
-          <div class="icon">React</div>
-          <div class="icon">Node</div>
-          <div class="icon">Py</div>
-          <div class="icon">Java</div>
-          <div class="icon">SQL</div>
-          <div class="icon">AWS</div>
-          <div class="icon">UX</div>
-          <div class="icon">iOS</div>
+          <div class="icon"><img src="/imgs/React-logo.png" alt="React"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="Tensorflow"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="Java"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="Python"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="Git"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="HTML"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="Node JS"/></div>
+          <div class="icon"><img src="/imgs/tf logo.png" alt="SolidWorks"/></div>
         </div>        
       </div>
     </section>
